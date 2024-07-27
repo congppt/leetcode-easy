@@ -1,2 +1,2 @@
 ﻿using Leetcode;
-Console.WriteLine(ClimbingStairsProblem.ClimbStairs(4));
+Console.WriteLine(ClimbingStairsProblem.ClimbStairs(45));
