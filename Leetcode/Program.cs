@@ -1,2 +1,2 @@
 ﻿using Leetcode;
-Console.WriteLine(SquareRootProblem.MySqrt(8));
+Console.WriteLine(ClimbingStairsProblem.ClimbStairs(4));

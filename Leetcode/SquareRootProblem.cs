@@ -9,7 +9,7 @@ namespace Leetcode
             int end = x;
             while (start <= end)
             {
-                int mid = start + (end - start) / 2;
+                int mid = (start + end) / 2;
                 var sqrt = x / mid;
                 if (sqrt == mid) return mid;
                 if (sqrt < mid)
