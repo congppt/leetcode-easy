@@ -1,2 +1,2 @@
 ﻿using Leetcode;
-Console.WriteLine(ClimbingStairsProblem.ClimbStairs(45));
+MergeSortedArrayProblem.Merge([1, 2, 3, 0, 0, 0], 3, [2,5,6], 3);
