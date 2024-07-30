@@ -32,11 +32,11 @@ namespace Leetcode
             }
             return true;
         }
-        static bool IsSameNode(TreeNode? p, TreeNode? q)
+        static bool IsSameTreeRecursive(TreeNode? p, TreeNode? q)
         {
             if (p == null && q == null) return true;
             if (p == null || q == null || (p.val != q.val)) return false;
-            return IsSameNode(p.left, q.left) && IsSameNode(p.right, q.right);
+            return IsSameTreeRecursive(p.left, q.left) && IsSameTreeRecursive(p.right, q.right);
         }
         public class TreeNode
         {

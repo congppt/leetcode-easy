@@ -1,4 +1,7 @@
 ﻿using Leetcode;
-var treeNode1 = new SameTreeProblem.TreeNode(1, new SameTreeProblem.TreeNode(2), new SameTreeProblem.TreeNode(3));
-var treeNode2 = new SameTreeProblem.TreeNode(1, new SameTreeProblem.TreeNode(2), new SameTreeProblem.TreeNode(3));
-Console.WriteLine(SameTreeProblem.IsSameTree(treeNode1, treeNode2));
+var tree = new MaximumDepthOfBinaryTreeProblem.TreeNode(3, 
+            new MaximumDepthOfBinaryTreeProblem.TreeNode(9), 
+            new MaximumDepthOfBinaryTreeProblem.TreeNode(20, 
+                    new MaximumDepthOfBinaryTreeProblem.TreeNode(15), 
+                    new MaximumDepthOfBinaryTreeProblem.TreeNode(7)));
+Console.WriteLine(MaximumDepthOfBinaryTreeProblem.MaxDepth(tree));
