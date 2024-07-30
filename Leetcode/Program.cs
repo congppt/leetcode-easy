@@ -1,2 +1,4 @@
 ﻿using Leetcode;
-MergeSortedArrayProblem.Merge([1, 2, 3, 0, 0, 0], 3, [2,5,6], 3);
+var treeNode1 = new SameTreeProblem.TreeNode(1, new SameTreeProblem.TreeNode(2), new SameTreeProblem.TreeNode(3));
+var treeNode2 = new SameTreeProblem.TreeNode(1, new SameTreeProblem.TreeNode(2), new SameTreeProblem.TreeNode(3));
+Console.WriteLine(SameTreeProblem.IsSameTree(treeNode1, treeNode2));
