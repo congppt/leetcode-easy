@@ -8,11 +8,11 @@ namespace Leetcode
 {
     public class ConvertSortedArrayToBinarySearchTreeProblem
     {
-        public TreeNode? SortedArrayToBST(int[] nums)
+        public static TreeNode? SortedArrayToBST(int[] nums)
         {
             return ConvertToBST(0, nums.Length - 1, nums);
         }
-        public TreeNode? ConvertToBST(int start, int end, int[] nums)
+        public static TreeNode? ConvertToBST(int start, int end, int[] nums)
         {
             if (start > end) return null;
             var mid = (start + end) / 2;

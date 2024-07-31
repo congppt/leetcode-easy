@@ -1,7 +1,16 @@
 ﻿using Leetcode;
-var tree = new MaximumDepthOfBinaryTreeProblem.TreeNode(3, 
-            new MaximumDepthOfBinaryTreeProblem.TreeNode(9), 
-            new MaximumDepthOfBinaryTreeProblem.TreeNode(20, 
-                    new MaximumDepthOfBinaryTreeProblem.TreeNode(15), 
-                    new MaximumDepthOfBinaryTreeProblem.TreeNode(7)));
-Console.WriteLine(MaximumDepthOfBinaryTreeProblem.MaxDepth(tree));
+var node1 = new BalancedBinaryTreeProblem.TreeNode(1);
+var node2 = new BalancedBinaryTreeProblem.TreeNode(2);
+var node3 = new BalancedBinaryTreeProblem.TreeNode(3);
+var node4 = new BalancedBinaryTreeProblem.TreeNode(4);
+var node5 = new BalancedBinaryTreeProblem.TreeNode(5);
+var node6 = new BalancedBinaryTreeProblem.TreeNode(6);
+var node7 = new BalancedBinaryTreeProblem.TreeNode(7);
+var node8 = new BalancedBinaryTreeProblem.TreeNode(8);
+node1.left = node2;
+node1.right = node3;
+node2.left = node4;
+node3.right = node5;
+node4.left = node6;
+node5.right = node8;
+Console.WriteLine(BalancedBinaryTreeProblem.IsBalanced(node1));
