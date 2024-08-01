@@ -10,26 +10,7 @@ namespace Leetcode
     {
         public static bool HasPathSum(TreeNode? root, int targetSum)
         {
-            if (root == null) return false;
-            Stack<TreeNode> parents = [];
-            while (root != null ||  parents.Count > 0)
-            {
-                if (root != null)
-                {
-                    targetSum -= root.val;
-                    if (targetSum == 0 && root.left == null && root.right == null) 
-                        return true;
-                    parents.Push(root);
-                    root = root.left;
-                }
-                else
-                {
-                    root = parents.Pop();
-                    if (root.right == null) targetSum += root.val;
-                    root = root.right;
-                }
-            }
-            return false;
+            return HasPathSumRecursive(root, targetSum);
         }
         static bool HasPathSumRecursive(TreeNode? root, int targetSum)
         {
