@@ -15,9 +15,11 @@ namespace Leetcode
 
             for (var i = 1; i < nums.Length; i++)
             {
-                if ((nums[uniqueIndex] ^ nums[i]) == 0) uniqueIndex
+                // a ^ a = 0 (bit diff)
+                //a ^ a ^ b = 0 ^ b = b (bit diff)
+                uniqueNumber ^= nums[i];
             }
-            return nums[uniqueIndex];
+            return uniqueNumber;
         }
     }
 }
