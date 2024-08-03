@@ -6,7 +6,7 @@ namespace Leetcode
         {
             if (root == null) return [];
             List<int> result = [];
-            //InorderVisit(root, ref result);
+            //InorderTraversalRecursive(root, ref result);
             Stack<TreeNode> tree = [];
             while (root != null || tree.Count > 0)
             {
@@ -21,13 +21,13 @@ namespace Leetcode
             }
             return result;
         }
-        //public void InorderVisit(TreeNode? root, ref List<int> visited)
-        //{
-        //    if (root == null) return;
-        //    if (root.left != null) InorderVisit(root.left, ref visited);
-        //    visited.Add(root.val);
-        //    if (root.right != null) InorderVisit(root.right, ref visited);
-        //}
+        public void InorderTraversalRecursive(TreeNode? root, ref List<int> visited)
+        {
+            if (root == null) return;
+            if (root.left != null) InorderTraversalRecursive(root.left, ref visited);
+            visited.Add(root.val);
+            if (root.right != null) InorderTraversalRecursive(root.right, ref visited);
+        }
         public class TreeNode
         {
             public int val;

@@ -6,30 +6,29 @@ using System.Threading.Tasks;
 
 namespace Leetcode
 {
-    public class BinaryPreorderTraversal
+    public class BinaryPostorderTraversalProblem
     {
-        public static IList<int> PreorderTraversal(TreeNode? root)
+        public static IList<int> PostorderTraversal(TreeNode? root)
         {
             if (root == null) return [];
+            Stack<TreeNode> stack = [];
             List<int> result = [];
-            Stack<TreeNode> visited = [];
-            while (root != null || visited.Count > 0)
+            stack.Push(root);
+            while (stack.Count > 0)
             {
-                if (root != null)
-                {
-                    result.Add(root.val);
-                    visited.Push(root);
-                    root = root.left;
-                } else root = visited.Pop().right;
+                root = stack.Pop();
+                result.Insert(0, root.val);
+                if (root.left != null) stack.Push(root.left);
+                if (root.right != null) stack.Push(root.right);
             }
             return result;
         }
-        static IList<int> PreorderTraversalRecursive(TreeNode? root, ref List<int> result)
+        static IList<int> PostorderTraversalRecursive(TreeNode? root, ref List<int> result)
         {
             if (root == null) return result;
+            PostorderTraversalRecursive(root.left, ref result);
+            PostorderTraversalRecursive(root.right, ref result);
             result.Add(root.val);
-            PreorderTraversalRecursive(root.left, ref result);
-            PreorderTraversalRecursive(root.right, ref result);
             return result;
         }
         public class TreeNode
