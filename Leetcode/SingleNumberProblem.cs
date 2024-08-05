@@ -15,6 +15,7 @@ namespace Leetcode
 
             for (var i = 1; i < nums.Length; i++)
             {
+                //xor = ^
                 // a ^ a = 0 (bit diff)
                 //a ^ a ^ b = 0 ^ b = b (bit diff)
                 uniqueNumber ^= nums[i];
