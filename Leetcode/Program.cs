@@ -14,4 +14,4 @@
 //node3.left = node6;
 //node4.left = node7;
 //Console.WriteLine(BinaryPostorderTraversalProblem.PostorderTraversal(node1));
-Console.WriteLine(HappyNumberProblem.IsHappy(19));
+Console.WriteLine(IsomorphicStringsProblem.IsIsomorphic("egg", "add"));
