@@ -10,5 +10,5 @@ var node8 = new PalindromeLinkedListProblem.ListNode(8);
 node1.next = node2;
 node2.next = node3;
 node3.next= node4;
-Console.WriteLine(PalindromeLinkedListProblem.IsPalindrome(node1));
+Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
 //Console.WriteLine(ContainsDuplicateProblem.ContainsDuplicate([3,3]));
