@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(FirstBadVersionProblem.FirstBadVersion(2126753390));
+Console.WriteLine(WordPatternProblem.WordPattern("abba", "dog cat cat dog"));

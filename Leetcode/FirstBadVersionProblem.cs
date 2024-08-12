@@ -16,9 +16,11 @@ namespace Leetcode
             {
                 // not (start + end) / 2 to avoid int overflow 
                 var mid = start + (end - start) / 2;
-                if (IsBadVersion(mid))
-                    end = mid
-                else start = mid + 1;
+
+                //IsBadVersion is from leetcode
+                //if (IsBadVersion(mid))
+                //    end = mid;
+                //else start = mid + 1;
             }
             return start;
         }
