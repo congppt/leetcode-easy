@@ -15,7 +15,7 @@ namespace Leetcode
             {
                 _nums = new int[nums.Length + 1];
                 for (int i = 1; i < _nums.Length; i++)
-                    _nums[i] = _nums[i - 1] + nums[i];
+                    _nums[i] = _nums[i - 1] + nums[i - 1];
             }
 
             public int SumRange(int left, int right)
