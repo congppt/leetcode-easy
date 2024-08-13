@@ -8,7 +8,7 @@ namespace Leetcode
 {
     public class CountingBitsProblem
     {
-        public int[] CountBits(int n)
+        public static int[] CountBits(int n)
         {
             var result = new int[n + 1];
             int lastPower2 = 1;
