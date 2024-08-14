@@ -8,7 +8,7 @@ namespace Leetcode
 {
     public class IntersectionOfTwoArraysProblem
     {
-        public int[] Intersection(int[] nums1, int[] nums2)
+        public static int[] Intersection(int[] nums1, int[] nums2)
         {
             HashSet<int> result = [];
             HashSet<int> nums1Values = [];
