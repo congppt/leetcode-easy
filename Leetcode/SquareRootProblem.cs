@@ -11,7 +11,7 @@ namespace Leetcode
             {
                 //right bit shift help avoid int overflow
                 //shift 1 bit == div by 2
-                int mid = (start + end) >> 1;
+                int mid = start + (end - start) / 2;
                 var sqrt = x / mid;
                 if (sqrt == mid) return mid;
                 if (sqrt < mid)

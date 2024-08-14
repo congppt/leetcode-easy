@@ -15,15 +15,18 @@ namespace Leetcode
             while (start <= end)
             {
                 // not (start + end) / 2 to avoid int overflow 
-                //right bit shift 1 == div by 2 but also help avoid int overflow
-                var mid = (start + end) >> 1;
-
-                //IsBadVersion is from leetcode
-                //if (IsBadVersion(mid))
-                //    end = mid;
-                //else start = mid + 1;
+                //right bit shift 1 == div by 2
+                var mid = start + (end - start) / 2;
+                if (IsBadVersion(mid))
+                    end = mid;
+                else start = mid + 1;
             }
             return start;
+        }
+        //mock leetcode IsBadVersion
+        static bool IsBadVersion(int num)
+        {
+            return true;
         }
     }
 }

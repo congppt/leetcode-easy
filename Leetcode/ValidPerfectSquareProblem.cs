@@ -15,7 +15,7 @@ namespace Leetcode
             int end = num;
             while (start <= end)
             {
-                int mid = (end + start) >> 1;
+                int mid = start + (end - start) / 2;
                 int quotient = num / mid;
                 if (quotient == mid && num % mid == 0) return true;
                 if (quotient > mid)
