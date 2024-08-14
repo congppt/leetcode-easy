@@ -9,7 +9,9 @@ namespace Leetcode
             int end = x;
             while (start <= end)
             {
-                int mid = (start + end) / 2;
+                //right bit shift help avoid int overflow
+                //shift 1 bit == div by 2
+                int mid = (start + end) >> 1;
                 var sqrt = x / mid;
                 if (sqrt == mid) return mid;
                 if (sqrt < mid)

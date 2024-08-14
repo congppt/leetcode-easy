@@ -15,7 +15,8 @@ namespace Leetcode
             while (start <= end)
             {
                 // not (start + end) / 2 to avoid int overflow 
-                var mid = start + (end - start) / 2;
+                //right bit shift 1 == div by 2 but also help avoid int overflow
+                var mid = (start + end) >> 1;
 
                 //IsBadVersion is from leetcode
                 //if (IsBadVersion(mid))
