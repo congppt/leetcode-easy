@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(ThirdMaximumNumber.ThirdMax([1, 2, -2147483648]));
+Console.WriteLine(ArrangingCoinsProblem.ArrangeCoins(5));
