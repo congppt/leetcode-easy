@@ -10,6 +10,7 @@ namespace Leetcode
     {
         public int ArrangeCoins(int n)
         {
+            //faster solution require type casting
             var i = 0;
             while (n > i)
                 n -= ++i;

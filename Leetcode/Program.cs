@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(ArrangingCoinsProblem.ArrangeCoins(5));
+Console.WriteLine(FindAllNumbersDissapearedInAnArrayProblem.FindDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]));
