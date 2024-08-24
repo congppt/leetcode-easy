@@ -25,7 +25,8 @@ namespace Leetcode
                     root = root.left;
                 }
                 root = stack.Pop();
-                //
+                //use Inorder traverse because next val == currentVal only when nextVal is parent or nextVal is right child of currentVal
+                //=> if next val != currentVal => currentVal no longer appear in tree.
                 if (root.val != currentVal)
                 {
                     currentVal = root.val;
