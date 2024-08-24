@@ -20,6 +20,7 @@ namespace Leetcode
             }
             for (int i = 0; i < nums2.Length; i++)
             {
+                //a < c & b < c => result[index of a] == result[index of b] = c
                 while (cache.Count > 0 && nums2[i] > cache.Peek())
                 {
                     var index = map[cache.Pop()];
