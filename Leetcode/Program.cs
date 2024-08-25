@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(ConstructTheRectangleProblem.ConstructRectangle(6));
+Console.WriteLine(DetectCapitalProblem.DetectCapitalUse("ffffffffffffffffffffF"));

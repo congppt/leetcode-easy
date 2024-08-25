@@ -20,5 +20,10 @@ namespace Leetcode
             }
             return sum[n];
         }
+        int FibRecursive(int n)
+        {
+            if (n == 0 || n == 1) return n;
+            return FibRecursive(n - 1) + FibRecursive(n - 2);
+        }
     }
 }
