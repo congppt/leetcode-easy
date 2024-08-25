@@ -12,7 +12,24 @@ namespace Leetcode
         {
             if (num == 1) return false;
             var sum = 1;
-            int sqrt = (int)Math.Sqrt(num);
+            //can use Math.Sqrt instead
+            int sqrt = 0;
+            int start = 1;
+            int end = num;
+            while (start <= end)
+            {
+                //right bit shift help avoid int overflow
+                //shift 1 bit == div by 2
+                int mid = start + (end - start) / 2;
+                sqrt = num / mid;
+                if (sqrt == mid) break;
+                if (sqrt < mid)
+                    end = mid - 1;
+                else
+                    start = mid + 1;
+            }
+            sqrt = sqrt < end ? sqrt : end;
+            //
             for (int i = 2; i <= sqrt; i++)
             {
                 if (num % i == 0)
