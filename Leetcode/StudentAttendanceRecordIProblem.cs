@@ -21,9 +21,9 @@ namespace Leetcode
                         if (lateCount == 3) return false;
                         break;
                     case 'A':
-                        lateCount = 0;
                         absentCount++;
                         if (absentCount == 2) return false;
+                        lateCount = 0;
                         break;
                     default:
                         lateCount = 0;
