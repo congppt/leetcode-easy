@@ -5,32 +5,28 @@ using System.Threading.Tasks;
 
 namespace Leetcode
 {
-    public class NAryTreePreOrderTraversalProblem
-    {
-        public List<int> nodes = [];
-        public IList<int> Preorder(Node? root)
+    public class NAryTreePostorderTraversalProblem
+    {       
+        List<int> nodes = [];
+        public IList<int> Postorder(Node? root)
         {
             if (root == null) return nodes;
             Stack<Node> visited = [];
             while (root != null || visited.Count > 0){
                 if (root != null){
-                    nodes.Add(root.val);
-                    for (int i = root.children.Count - 1; i >= 0; i--){
+                    nodes.Insert(0, root.val);
+                    for (int i = 0; i < root.children.Count; i++)
                         visited.Push(root.children[i]);
-                    }
                     root = null;
                 } else root = visited.Pop();
             }
             return nodes;
         }
-        public IList<int> PreorderRecursive(Node? root)
-        {
+        public IList<int> PostorderRecursive(Node root){
             if (root == null) return nodes;
-            nodes.Add(root.val);
             for (int i = 0; i < root.children.Count; i++)
-            {
-                PreorderRecursive(root.children[i]);
-            }
+                PostorderRecursive(root.children[i]);
+            nodes.Add(root.val);
             return nodes;
         }
         public class Node
