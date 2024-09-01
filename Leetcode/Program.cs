@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(ReverseStringIIProblem.ReverseStr("abcdefg", 2));
+Console.WriteLine(CanPlaceFlowersProblem.CanPlaceFlowers([1,0,0,0,0,1], 2));
