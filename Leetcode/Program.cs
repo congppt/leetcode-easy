@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(CanPlaceFlowersProblem.CanPlaceFlowers([1,0,0,0,0,1], 2));
+Console.WriteLine(MaximumProductOfThreeNumbersProblem.MaximumProduct([1,0,100]));
