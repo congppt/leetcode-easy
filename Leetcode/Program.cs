@@ -11,4 +11,4 @@
 //node2.next = node3;
 //node3.next= node4;
 //Console.WriteLine(ValidAnagramProblem.IsAnagram("aacc", "ccac"));
-Console.WriteLine(BaseballGameProblem.CalPoints(["5","2","C","D","+"]));
+Console.WriteLine(CountBinarySubstringsProblem.CountBinarySubstrings("00110011"));
